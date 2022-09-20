@@ -133,3 +133,40 @@ main{
     width: 90%;
     height: 90%;
 }
+#capa{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
+#capa h1{
+    font-weight: bolder;
+    color: white;
+}
+#info{
+    text-align: left;
+    color: white;
+}
+#info h2{
+    font-size: 24px;
+}
+#info p{
+    font-size: 20px;
+}
+#download{
+    text-align: left;
+    color: white;
+}
+#download h2{
+    font-size: 24px;
+}
+#download>ul li{
+    list-style-type: none;
+}
+#download a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#download a:hover{
+    color: red;
+    font-weight: bolder;
+}
