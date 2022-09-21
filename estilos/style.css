@@ -112,6 +112,7 @@ main{
     padding: 5px;
 }
 #contato p{
+    text-align: left;
     color: white;
     font-size: 22px;
     padding: 5px;
