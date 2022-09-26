@@ -29,4 +29,8 @@
         border-radius: 20px;
         width: 210px;
     }
+
+    .conteiner h2{
+        font-size: 26px;
+    }
 }
