@@ -55,7 +55,7 @@ menu > ul{
 #itens{
     background-color: gray;
     text-align: center;
-    padding: 5px;
+    padding: 2px;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -120,7 +120,7 @@ main{
     padding: 5px;
 }
 #contato p{
-    text-align: left;
+    text-align: justify;
     color: white;
     font-size: 22px;
     padding: 5px;
@@ -129,7 +129,7 @@ main{
     color: white;
 }
 #video{
-    background-color: rgba(255, 255, 255, 0.500);
+    background-color: rgba(255, 255, 255, 0.050);
     margin: 0px -20px 30px -20px;
     padding: 15px;
     position: relative;
@@ -151,7 +151,7 @@ main{
     color: white;
 }
 #info{
-    text-align: left;
+    text-align: justify;
     color: white;
 }
 #info h2{
@@ -182,4 +182,84 @@ main{
 #dica{
     font-weight: bolder;
     color: red;
+}
+#recentes{
+    text-align: center;
+}
+#recentes img{
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+}
+#recentes img:hover{
+    border: 2px solid red;
+}
+
+
+.conteiner{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    width: auto;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+.conteiner h2{
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: gray;
+    padding: 5px;
+}
+#books li{
+    display: none; /*esconde o elemento*/
+}
+#nao-achado{
+    display: none;
+}
+#nao-achado > p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding: 10px;
+    max-width: 320px;
+}
+#books a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition-duration: .3s;
+}
+#books a:hover{
+    font-weight: bolder;
+    color: red;
+}
+#books li{
+    list-style-type: none;
+}
+#pesquisa{
+    width: 300px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+#botao{
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+#botao:hover{
+    background-color: white;
 }

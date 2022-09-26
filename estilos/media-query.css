@@ -16,4 +16,17 @@
     main{
         display: 768px;
     }
+    #recentes{
+        text-align: left;
+    }
+    #recentes img{
+        margin: 10px;
+        width: 200px;
+        height: 150px;
+        transition-duration: .3s;
+    }
+    #recentes img:hover{
+        border-radius: 20px;
+        width: 210px;
+    }
 }
