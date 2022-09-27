@@ -36,14 +36,13 @@ header p{
 span#hamb{
     background-color: gray;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px;
     cursor: pointer; /*muda o ponteiro do mouse para mão*/
 }
 span#hamb:hover{
-    background-color: white;
-    color: black;
+    color: white;
 }
 menu{
     display: none;
@@ -53,7 +52,8 @@ menu > ul{
     list-style-type: none; /*tira as bolinhas*/
 }
 #itens{
-    background-color: gray;
+    /*background-color: rgba(255, 255, 255, 0.865);*/
+    background-color: rgba(0, 0, 0, 0.400);
     text-align: center;
     padding: 2px;
     font-size: 18px;
@@ -64,6 +64,11 @@ menu a{
     padding: 5px;
     text-align: center;
     text-decoration: none;
+    background-color: gray;
+    border-radius: 5px;
+}
+#itens li{
+    margin-bottom: 2px;
 }
 #itens a{
     text-decoration: none;

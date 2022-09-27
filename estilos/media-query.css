@@ -8,9 +8,15 @@
     menu{
         display: block;
     }
+    menu a{
+        background-color: gray;
+    }
 
     menu li{
         display:inline-block;
+    }
+    #itens{
+        background-color: gray;
     }
 
     main{
