@@ -27,7 +27,9 @@
     }
     #recentes img:hover{
         border-radius: 20px;
-        width: 210px;
+        transform: translate(-1px,-10px);
+        transition: transform .3s;
+        box-shadow: 5px 5px 10px black;
     }
 
     .conteiner h2{
