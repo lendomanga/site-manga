@@ -106,6 +106,7 @@ img{
 #manga-livro a:hover{
     color: red;
     font-weight: bolder;
+    text-decoration: underline;
 }
 main{
     min-width: 320px;
@@ -183,6 +184,7 @@ main{
 #download a:hover{
     color: red;
     font-weight: bolder;
+    text-decoration: underline;
 }
 #dica{
     font-weight: bolder;
@@ -250,6 +252,7 @@ main{
 #books a:hover{
     font-weight: bolder;
     color: red;
+    text-decoration: underline;
 }
 #books li{
     list-style-type: none;
