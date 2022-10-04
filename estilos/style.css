@@ -1,11 +1,25 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
     padding: 0px;
     margin: 0px;
 }
+:root{
+    --fonte-1:'PT Sans Caption', sans-serif;
+    --fonte-2: 'Orbitron', sans-serif;
+    --fonte-3: 'Space Mono', monospace;
+    --fonte-4: 'Chakra Petch', sans-serif;
+    --fonte-5: 'Gemunu Libre', sans-serif;
+    --fonte-6: 'Silkscreen', cursive;
+    --fonte-7: 'Ubuntu', sans-serif;
+}
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgba(0, 0, 0, 0.880);
     min-height: 100vh;
     min-width: 90vw;
@@ -17,6 +31,7 @@ header{
     padding: 20px;
 }
 header h1{
+    font-family: var(--fonte-6);
     background-color: #1a3c3f;
     color: white;
     text-align: center;
@@ -26,6 +41,7 @@ header h1{
     margin-bottom: 5px;
 }
 header p{
+    font-family: var(--fonte-3);
     background-color: #1a3c3f;
     color: white;
     text-align: center;
@@ -34,15 +50,17 @@ header p{
     font-weight: bolder;
 }
 span#hamb{
-    background-color: gray;
+    background-color: black;
     display: block;
-    color: black;
+    color: gray;
     text-align: center;
     padding: 10px;
     cursor: pointer; /*muda o ponteiro do mouse para mão*/
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
 }
 span#hamb:hover{
-    color: white;
+    color: red;
 }
 menu{
     display: none;
@@ -52,41 +70,54 @@ menu > ul{
     list-style-type: none; /*tira as bolinhas*/
 }
 #itens{
-    /*background-color: rgba(255, 255, 255, 0.865);*/
-    background-color: rgba(0, 0, 0, 0.400);
+    /*background-color: rgba(0, 0, 0, 0.400);*/
+    background-color: gray;
     text-align: center;
     padding: 2px;
     font-size: 18px;
     margin-bottom: 10px;
+    font-family:var(--fonte-6);
 }
 menu a{
     display: block;
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    background-color: gray;
+    /*background-color: gray;*/
+    background-color: black;
     border-radius: 5px;
 }
 #itens li{
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 #itens a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: white;
     padding: 5px;
     transition-duration: .3s;
 }
 #itens a:hover{
-    color:white;
+    color:red;
+    text-decoration: underline;
 }
 #recentes{
     margin-top: 30px;
     text-align: center;
     color: white;
 }
+#recentes img{
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+}
+#recentes img:hover{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    transform: translate(-1px,-10px);
+    transition: transform .3s;
+}
 img{
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     width: 320px;
     height: 200px;
     margin-bottom: 10px;
@@ -109,6 +140,7 @@ img{
     text-decoration: underline;
 }
 main{
+    font-family: var(--fonte-7);
     min-width: 320px;
     max-width: 700px;
     margin: auto;
@@ -117,22 +149,22 @@ main{
     text-align: center;
 }
 #contato{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    color: white;
 }
 #contato h2{
-    color: white;
     font-size: 26px;
-    text-decoration: underline red;
     padding: 5px;
+    text-align: center;
 }
 #contato p{
-    text-align: justify;
-    color: white;
-    font-size: 22px;
+    text-align: left;
+    font-size: 24px;
     padding: 5px;
 }
 #copy h2{
     color: white;
+    font-size: 26px;
 }
 #video{
     background-color: rgba(255, 255, 255, 0.050);
@@ -149,22 +181,24 @@ main{
     height: 90%;
 }
 #capa{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 20px;
 }
 #capa h1{
-    font-weight: bolder;
+    font-size: 28px;
+    font-weight: bold;
     color: white;
 }
 #info{
-    text-align: justify;
     color: white;
+    text-align: left;
 }
 #info h2{
-    font-size: 24px;
+    /*font-size: 24px;*/
+    font-size: 26px;
 }
 #info p{
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 24px;
 }
 #download{
     text-align: left;
@@ -190,21 +224,11 @@ main{
     font-weight: bolder;
     color: red;
 }
-#recentes{
-    text-align: center;
-}
-#recentes img{
-    margin: 10px;
-    width: 300px;
-    height: 150px;
-}
-#recentes img:hover{
-    border: 2px solid red;
-}
 
 
+
+/*FORMATAÇÃO DO PÁGINA PESQUISAR*/
 .conteiner{
-    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
     width: auto;
     padding: 10px;
@@ -213,10 +237,12 @@ main{
     color: black;
 }
 .conteiner h2{
+    font-family: var(--fonte-6);
     border-radius: 15px;
     font-size: 20px;
-    background-color: gray;
+    background-color: black;
     padding: 5px;
+    color: white;
 }
 #books li{
     display: none; /*esconde o elemento*/
@@ -225,7 +251,6 @@ main{
     display: none;
 }
 #nao-achado > p{
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin: auto;
     border-radius: 20px;
