@@ -45,15 +45,16 @@ header p{
 span#hamb{
     background-color: black;
     display: block;
-    color: gray;
+    color: blue;
     text-align: center;
     padding: 10px;
     cursor: pointer; /*muda o ponteiro do mouse para mão*/
-    border-top: 1.5px solid white;
-    border-bottom: 1.5px solid white;
+    border-top: 1.5px solid blue;
+    border-bottom: 1.5px solid blue;
+    font-size: 2em;
 }
 span#hamb:hover{
-    color: red;
+    color: white;
 }
 menu{
     display: none;
@@ -64,7 +65,7 @@ menu > ul{
 }
 #itens{
     /*background-color: rgba(0, 0, 0, 0.400);*/
-    background-color: gray;
+    background-color: rgb(88, 88, 88);
     text-align: center;
     padding: 2px;
     font-size: 18px;
@@ -90,7 +91,7 @@ menu a{
     transition-duration: .3s;
 }
 #itens a:hover{
-    color:red;
+    color:blue;
     text-decoration: underline;
 }
 #recentes{
