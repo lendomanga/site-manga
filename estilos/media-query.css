@@ -1,6 +1,24 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #recentes{
+        text-align: left;
+    }
+    #recentes img{
+        margin: 10px;
+        width: 200px;
+        height: 150px;
+        transition-duration: .3s;
+    }
+    #recentes img:hover{
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+        transform: translate(-1px,-10px);
+        transition: transform .3s;
+    }
+}
+
+@media screen and (min-width: 992px){
     span#hamb{
         display: none;
     }
